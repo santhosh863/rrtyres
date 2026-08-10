@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Tyres — Premium Two-Wheeler Tyre Sales & Services Chennai</title>
+    <meta name="description"
+        content="RR Tyres offers premium two-wheeler tyre sales, puncture repairs, nitrogen filling for bikes and scooters. Authorized dealer for MRF, Apollo, and CEAT in Chennai.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a id="whatsappFloat" href="#" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+        <span>Chat on WhatsApp</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">RR</span>
+                <span class="logo-text">Tyres</span>
+            </a>
+            <div class="hours-badge" id="hoursBadge">
+                <span class="hours-dot" id="hoursDot"></span>
+                <span id="hoursText">Loading...</span>
+            </div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#tools">Tools</a>
+                <a href="#booking">Book</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="mobile-links">
+            <a href="#services">Services</a>
+            <a href="#tools">Tools</a>
+            <a href="#booking">Book</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-animate>
+                <div class="dot"></div>
+                <span id="heroBadgeText"></span>
+            </div>
+            <h1 data-animate><span id="heroTitle1"></span> <span class="gradient-text" id="heroTitleHL"></span></h1>
+            <p data-animate id="heroDesc"></p>
+            <div class="btn-group" data-animate>
+                <a href="#booking" class="btn btn-primary" id="heroBookBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:text-bottom; margin-right:4px;">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span id="heroBookText"></span>
+                </a>
+                <a id="heroWaBtn" href="#" target="_blank" class="btn btn-whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    <span id="heroWaText"></span>
+                </a>
+                <a href="#services" class="btn btn-secondary" id="heroExploreBtn"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brands -->
+    <section class="brands" id="brands">
+        <div class="brands-inner" data-animate>
+            <h3 id="brandsHeading"></h3>
+            <div class="brand-logos" id="brandLogos">
+                <!-- Populated from config -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="section-header" data-animate>
+            <span class="section-tag" id="servicesTag"></span>
+            <h2><span id="servicesTitle"></span> <span class="gradient-text" id="servicesTitleHL"></span></h2>
+            <p id="servicesSubtitle"></p>
+        </div>
+        <div class="services-grid" id="servicesGrid">
+            <!-- Populated from config -->
+        </div>
+    </section>
+
+    <!-- Smart Tools Section -->
+    <section class="tools-section" id="tools">
+        <div class="section-header" data-animate>
+            <span class="section-tag" id="toolsTag"></span>
+            <h2><span id="toolsTitle"></span> <span class="gradient-text" id="toolsTitleHL"></span></h2>
+            <p id="toolsSubtitle"></p>
+        </div>
+        <div class="tools-tabs" data-animate>
+            <!--<button class="tab-btn active" data-tab="sizeFinder"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align:text-bottom; margin-right:4px;">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg> Size Finder</button>-->
+            <button class="tab-btn" data-tab="pressureCalc"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align:text-bottom; margin-right:4px;">
+                    <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+                    <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+                    <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+                </svg> Pressure Calc</button>
+            <button class="tab-btn" data-tab="wearChecker"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align:text-bottom; margin-right:4px;">
+                    <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 9.36l-7.1 7.1a2.12 2.12 0 0 1-3-3l7.1-7.1a6 6 0 0 1 9.36-7.94l-3.77 3.77z" />
+                </svg> Wear Checker</button>
+            <button class="tab-btn" data-tab="costEstimator"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align:text-bottom; margin-right:4px;">
+                    <path d="M12 2v20" />
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg> Cost Estimator</button>
+        </div>
+
+        <!-- Tyre Size Finder -->
+        <!-- <div class="tool-panel active" id="sizeFinder" data-animate>
+            <div class="tool-card">
+                <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="vertical-align:text-bottom; margin-right:6px; color:var(--accent-1);">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg> Two-Wheeler Tyre Size Finder</h3>
+                <p>Select your bike or scooter model to get the recommended front and rear tyre sizes.</p>
+                <select id="vehicleSelect" class="form-control" onchange="findTyreSize()">-->
+                    <!-- Populated from config -->
+                </select>
+                <div class="tool-result" id="sizeResult" style="display:none;">
+                    <div class="result-badge">
+                        <span class="result-label">Recommended Tyre Sizes</span>
+                        <span class="result-value" id="sizeValue" style="font-size:1.4rem;"></span>
+                    </div>
+                    <p class="result-note">These are standard OEM sizes for your two-wheeler. Visit our shop for
+                        availability and expert fitting.</p>
+                    <button class="btn btn-whatsapp" onclick="orderViaWhatsApp()" style="margin-top:16px;">Order via
+                        WhatsApp</button>
+                </div>
+            </div>
+        </div>
+        <!-- Pressure Calculator -->
+        <div class="tool-panel" id="pressureCalc">
+            <div class="tool-card">
+                <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="vertical-align:text-bottom; margin-right:6px; color:var(--accent-1);">
+                        <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+                        <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+                        <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+                    </svg> Two-Wheeler Tyre Pressure Guide</h3>
+                <p>Get the recommended tyre pressure for your bike or scooter based on vehicle type and load.</p>
+                <select id="vehicleType" class="form-control">
+                    <!-- Populated from config -->
+                </select>
+                <select id="loadType" class="form-control" style="margin-top:12px;">
+                    <!-- Populated from config -->
+                </select>
+                <button class="btn btn-primary" onclick="calcPressure()" style="margin-top:16px; width:100%;">Calculate
+                    Pressure</button>
+                <div class="tool-result" id="pressureResult" style="display:none;">
+                    <div class="pressure-grid">
+                        <div class="pressure-item">
+                            <span class="pressure-label">Front Tyres</span>
+                            <span class="pressure-val" id="frontPressure"></span>
+                        </div>
+                        <div class="pressure-item">
+                            <span class="pressure-label">Rear Tyres</span>
+                            <span class="pressure-val" id="rearPressure"></span>
+                        </div>
+                    </div>
+                    <p class="result-note">⚠️ Always verify with your vehicle manual. These are general guidelines.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wear Checker -->
+        <div class="tool-panel" id="wearChecker">
+            <div class="tool-card">
+                <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="vertical-align:text-bottom; margin-right:6px; color:var(--accent-1);">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 9.36l-7.1 7.1a2.12 2.12 0 0 1-3-3l7.1-7.1a6 6 0 0 1 9.36-7.94l-3.77 3.77z" />
+                    </svg> Tyre Wear Checker</h3>
+                <p>Answer a few quick questions to find out if your tyres need replacing.</p>
+                <div id="wearQuizContent">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" id="quizBar" style="width:33%"></div>
+                    </div>
+                    <div id="wearQuizQuestions">
+                        <!-- Populated from config -->
+                    </div>
+                </div>
+                <div class="quiz-result" id="wearResult" style="display:none;">
+                    <div class="wear-gauge">
+                        <div class="wear-fill" id="wearFill"></div>
+                        <span class="wear-label-text" id="wearLabelText"></span>
+                    </div>
+                    <h4 id="wearResultTitle"></h4>
+                    <p id="wearResultDesc"></p>
+                    <a id="wearWaLink" href="#" target="_blank" class="btn btn-whatsapp"
+                        style="margin-top:16px;">Get Free Check at Our Shop</a>
+                    <button class="btn btn-secondary" onclick="resetQuiz()" style="margin-top:8px; width:100%;">Take
+                        Quiz Again</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Estimator -->
+        <div class="tool-panel" id="costEstimator">
+            <div class="tool-card">
+                <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="vertical-align:text-bottom; margin-right:6px; color:var(--accent-1);">
+                        <path d="M12 2v20" />
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg> Service Cost Estimator</h3>
+                <p>Get an approximate cost for our services before you visit.</p>
+                <select id="serviceType" class="form-control" onchange="estimateCost()">
+                    <!-- Populated from config -->
+                </select>
+                <div class="tool-result" id="costResult" style="display:none;">
+                    <div class="cost-display">
+                        <span class="cost-label">Estimated Cost</span>
+                        <span class="cost-range" id="costRange"></span>
+                    </div>
+                    <p class="result-note" id="costNote"></p>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:16px;">Get Exact Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking -->
+    <section class="booking-section" id="booking">
+        <div class="section-header" data-animate>
+            <span class="section-tag" id="bookingTag"></span>
+            <h2><span id="bookingTitle"></span> <span class="gradient-text" id="bookingTitleHL"></span></h2>
+            <p id="bookingSubtitle"></p>
+        </div>
+        <div class="booking-container" data-animate>
+            <div class="booking-left">
+                <div class="booking-info-card">
+                    <div class="booking-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="8.5" cy="7" r="4" />
+                            <line x1="20" y1="8" x2="20" y2="14" />
+                            <line x1="23" y1="11" x2="17" y2="11" />
+                        </svg></div>
+                    <h4>Walk-ins Welcome</h4>
+                    <p id="bookingWalkInText"></p>
+                </div>
+                <div class="booking-info-card">
+                    <div class="booking-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg></div>
+                    <h4>Business Hours</h4>
+                    <div class="hours-list" id="bookingHoursList">
+                        <!-- Populated from config -->
+                    </div>
+                </div>
+                <div class="booking-info-card">
+                    <div class="booking-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg></div>
+                    <h4>Quick Call</h4>
+                    <p>Prefer to call? Reach us at<br><a id="quickCallLink" href="#"
+                            style="color:var(--accent-1); font-weight:700;"></a></p>
+                </div>
+            </div>
+            <div class="booking-form-card">
+                <h4>Book via WhatsApp</h4>
+                <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:20px;">Fill the form below — we'll
+                    send your booking details directly on WhatsApp.</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="bookName" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="bookPhone" class="form-control" placeholder="+91 XXXXX XXXXX">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email (for confirmation)</label>
+                    <input type="email" id="bookEmail" class="form-control" placeholder="your.email@gmail.com">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" id="bookDate" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <select id="bookTime" class="form-control">
+                            <!-- Populated from config -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Service Required</label>
+                    <select id="bookService" class="form-control">
+                        <!-- Populated from config -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Shop</label>
+                    <select id="bookShop" class="form-control">
+                        <!-- Populated from config -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Model (optional)</label>
+                    <input type="text" id="bookVehicle" class="form-control"
+                        placeholder="e.g. Honda Activa 6G, Pulsar 150">
+                </div>
+                <button id="bookingBtn" class="btn btn-whatsapp btn-full" onclick="submitBooking()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Confirm via WhatsApp
+                </button>
+                <div id="slotMessage" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps -->
+    <section class="maps-section" id="locations">
+        <div class="section-header" data-animate>
+            <span class="section-tag" id="locationsTag"></span>
+            <h2><span id="locationsTitle"></span> <span class="gradient-text" id="locationsTitleHL"></span></h2>
+            <p id="locationsSubtitle"></p>
+        </div>
+        <div class="maps-grid" data-animate id="mapsGrid">
+            <!-- Populated from config -->
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews-section" id="reviews">
+        <div class="section-header" data-animate>
+            <span class="section-tag" id="reviewsTag"></span>
+            <h2><span id="reviewsTitle"></span> <span class="gradient-text" id="reviewsTitleHL"></span></h2>
+            <p id="reviewsSubtitle"></p>
+        </div>
+        <div class="reviews-stats" data-animate id="reviewsStats">
+            <!-- Populated from config -->
+        </div>
+        <div class="reviews-grid" data-animate id="reviewsGrid">
+            <!-- Populated from config -->
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="section-header" data-animate>
+            <span class="section-tag" id="faqTag"></span>
+            <h2><span id="faqTitle"></span> <span class="gradient-text" id="faqTitleHL"></span></h2>
+            <p id="faqSubtitle"></p>
+        </div>
+        <div class="faq-list" data-animate id="faqList">
+            <!-- Populated from config -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-container" data-animate>
+            <div class="contact-info">
+                <span class="section-tag" id="contactTag"></span>
+                <h3><span id="contactTitle"></span> <span class="gradient-text" id="contactTitleHL"></span></h3>
+                <p id="contactSubtitle"></p>
+                <div id="contactMethods">
+                    <!-- Populated from config -->
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contactForm">
+                    <div class="form-group"><input type="text" id="contactName" class="form-control"
+                            placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="tel" id="contactPhone" class="form-control"
+                            placeholder="Phone Number (optional)"></div>
+                    <div class="form-group"><input type="email" id="contactEmail" class="form-control"
+                            placeholder="Email Address (optional)"></div>
+                    <div class="form-group">
+                        <select id="contactService" class="form-control" style="cursor:pointer;">
+                            <!-- Populated from config -->
+                        </select>
+                    </div>
+                    <div class="form-group"><textarea id="contactMessage" class="form-control"
+                            placeholder="Your message or bike details..."></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p id="footerText"></p>
+    </footer>
+
+    <!-- Order Popup Modal -->
+    <div class="order-popup-overlay" id="orderPopup" style="display:none;"
+        onclick="if(event.target===this)closeOrderPopup()">
+        <div class="order-popup">
+            <button class="order-popup-close" onclick="closeOrderPopup()"><svg width="20" height="20"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg></button>
+            <h4>Order Tyres via WhatsApp</h4>
+            <p class="order-vehicle-info" id="orderVehicleLabel"></p>
+            <div class="form-group" style="margin-top:16px;">
+                <input type="text" id="orderName" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="orderPhone" class="form-control" placeholder="Phone Number">
+            </div>
+            <button class="btn btn-whatsapp" onclick="submitOrder()" style="width:100%; margin-top:8px;">Confirm & Open
+                WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
